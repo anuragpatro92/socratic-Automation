@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest">
+              <span class="suite-name border-failed">com.sjsu.socratic.socratic.SampleTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-com.sjsu.socratic.socratic.SampleTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-com.sjsu.socratic.socratic.SampleTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-com.sjsu.socratic.socratic.SampleTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-com.sjsu.socratic.socratic.SampleTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-com.sjsu.socratic.socratic.SampleTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-com.sjsu.socratic.socratic.SampleTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-com.sjsu.socratic.socratic.SampleTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 5 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" class="hide-methods failed suite-com.sjsu.socratic.socratic.SampleTest"> (hide)</a> <!-- hide-methods failed suite-com.sjsu.socratic.socratic.SampleTest -->
+                      <a href="#" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" class="show-methods failed suite-com.sjsu.socratic.socratic.SampleTest"> (show)</a> <!-- show-methods failed suite-com.sjsu.socratic.socratic.SampleTest -->
+                    </span>
+                    <div class="method-list-content failed suite-com.sjsu.socratic.socratic.SampleTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(17, 10)">testsocratic(17, 10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(6, 3967672674789433)">testsocratic(6, 3967672674789433)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(5, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)">testsocratic(5, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(15, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)">testsocratic(15, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(16, 3967672674789433)">testsocratic(16, 3967672674789433)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-com.sjsu.socratic.socratic.SampleTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" class="hide-methods passed suite-com.sjsu.socratic.socratic.SampleTest"> (hide)</a> <!-- hide-methods passed suite-com.sjsu.socratic.socratic.SampleTest -->
+                      <a href="#" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" class="show-methods passed suite-com.sjsu.socratic.socratic.SampleTest"> (show)</a> <!-- show-methods passed suite-com.sjsu.socratic.socratic.SampleTest -->
+                    </span>
+                    <div class="method-list-content passed suite-com.sjsu.socratic.socratic.SampleTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(12, 5)">testsocratic(12, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(11, 4)">testsocratic(11, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(4, 2x plus 1 equals 5)">testsocratic(4, 2x plus 1 equals 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(1, 4)">testsocratic(1, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(13, 102)">testsocratic(13, 102)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(19, x  caret  2  dash  3x  plus  2  equals  0)">testsocratic(19, x  caret  2  dash  3x  plus  2  equals  0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(10, 3x  caret  2  dash  5x  plus  6  equals  0)">testsocratic(10, 3x  caret  2  dash  5x  plus  6  equals  0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(2, 5)">testsocratic(2, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(7, 10)">testsocratic(7, 10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(8, 220)">testsocratic(8, 220)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(20, 3x  caret  2  dash  5x  plus  6  equals  0)">testsocratic(20, 3x  caret  2  dash  5x  plus  6  equals  0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(3, 102)">testsocratic(3, 102)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(14, 2x plus 1 equals 5)">testsocratic(14, 2x plus 1 equals 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(9, x  caret  2  dash  3x  plus  2  equals  0)">testsocratic(9, x  caret  2  dash  3x  plus  2  equals  0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.sjsu.socratic.socratic.SampleTest" title="com.sjsu.socratic.socratic.SampleTest" hash-for-method="testsocratic(18, 220)">testsocratic(18, 220)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-com.sjsu.socratic.socratic.SampleTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-com.sjsu.socratic.socratic.SampleTest" class="panel com.sjsu.socratic.socratic.SampleTest">
+          <div class="suite-com.sjsu.socratic.socratic.SampleTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sjsu.socratic.socratic.SampleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(17, 10)">
+                  </a> <!-- testsocratic(17, 10) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(17, 10)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Anurags-MacBook-Pro.local&apos;, ip: &apos;2601:646:8f80:d800:0:0:0:61e2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, databaseEnabled: false, desired: {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, deviceName: ba3eedaa, platformName: android}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: ba3eedaa, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: ba3eedaa, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 30921dca-9ec8-4fc1-a8b5-84123ed201f6
+*** Element info: {Using=id, value=com.google.socratic:id/accept_button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at com.sjsu.socratic.socratic.SampleTest.testsocratic(SampleTest.java:143)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(6, 3967672674789433)">
+                  </a> <!-- testsocratic(6, 3967672674789433) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(6, 3967672674789433)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Anurags-MacBook-Pro.local&apos;, ip: &apos;2601:646:8f80:d800:0:0:0:61e2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, databaseEnabled: false, desired: {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, deviceName: ba3eedaa, platformName: android}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: ba3eedaa, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: ba3eedaa, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 675cf0b0-4039-4321-8163-679d641767fb
+*** Element info: {Using=id, value=com.google.socratic:id/question_math}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at com.sjsu.socratic.socratic.SampleTest.testsocratic(SampleTest.java:147)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(5, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)">
+                  </a> <!-- testsocratic(5, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(5, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Anurags-MacBook-Pro.local&apos;, ip: &apos;2601:646:8f80:d800:0:0:0:61e2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, databaseEnabled: false, desired: {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, deviceName: ba3eedaa, platformName: android}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: ba3eedaa, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: ba3eedaa, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: cdd3576d-fec6-4db8-b1d1-82bc4ef05097
+*** Element info: {Using=id, value=com.google.socratic:id/question_math}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at com.sjsu.socratic.socratic.SampleTest.testsocratic(SampleTest.java:147)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(15, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)">
+                  </a> <!-- testsocratic(15, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(15, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Anurags-MacBook-Pro.local&apos;, ip: &apos;2601:646:8f80:d800:0:0:0:61e2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, databaseEnabled: false, desired: {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, deviceName: ba3eedaa, platformName: android}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: ba3eedaa, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: ba3eedaa, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 074d6d29-042b-42eb-81cc-4cf763358622
+*** Element info: {Using=id, value=com.google.socratic:id/button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at com.sjsu.socratic.socratic.SampleTest.testsocratic(SampleTest.java:130)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(16, 3967672674789433)">
+                  </a> <!-- testsocratic(16, 3967672674789433) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(16, 3967672674789433)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Anurags-MacBook-Pro.local&apos;, ip: &apos;2601:646:8f80:d800:0:0:0:61e2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, databaseEnabled: false, desired: {BROWSER_NAME: Android, appActivity: com.google.android.apps.edu..., appPackage: com.google.socratic, deviceName: ba3eedaa, platformName: android}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: ba3eedaa, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: ba3eedaa, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: c43f0f28-997f-40dc-ac7a-9cf4631d21a3
+*** Element info: {Using=id, value=com.google.socratic:id/camera_button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at com.sjsu.socratic.socratic.SampleTest.testsocratic(SampleTest.java:139)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.sjsu.socratic.socratic.SampleTest-class-failed -->
+          <div class="suite-com.sjsu.socratic.socratic.SampleTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sjsu.socratic.socratic.SampleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(12, 5)">
+                  </a> <!-- testsocratic(12, 5) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(12, 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(11, 4)">
+                  </a> <!-- testsocratic(11, 4) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(11, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(4, 2x plus 1 equals 5)">
+                  </a> <!-- testsocratic(4, 2x plus 1 equals 5) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(4, 2x plus 1 equals 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(1, 4)">
+                  </a> <!-- testsocratic(1, 4) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(1, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(13, 102)">
+                  </a> <!-- testsocratic(13, 102) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(13, 102)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(19, x  caret  2  dash  3x  plus  2  equals  0)">
+                  </a> <!-- testsocratic(19, x  caret  2  dash  3x  plus  2  equals  0) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(19, x  caret  2  dash  3x  plus  2  equals  0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(10, 3x  caret  2  dash  5x  plus  6  equals  0)">
+                  </a> <!-- testsocratic(10, 3x  caret  2  dash  5x  plus  6  equals  0) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(10, 3x  caret  2  dash  5x  plus  6  equals  0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(2, 5)">
+                  </a> <!-- testsocratic(2, 5) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(2, 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(7, 10)">
+                  </a> <!-- testsocratic(7, 10) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(7, 10)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(8, 220)">
+                  </a> <!-- testsocratic(8, 220) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(8, 220)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(20, 3x  caret  2  dash  5x  plus  6  equals  0)">
+                  </a> <!-- testsocratic(20, 3x  caret  2  dash  5x  plus  6  equals  0) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(20, 3x  caret  2  dash  5x  plus  6  equals  0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(3, 102)">
+                  </a> <!-- testsocratic(3, 102) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(3, 102)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(14, 2x plus 1 equals 5)">
+                  </a> <!-- testsocratic(14, 2x plus 1 equals 5) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(14, 2x plus 1 equals 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(9, x  caret  2  dash  3x  plus  2  equals  0)">
+                  </a> <!-- testsocratic(9, x  caret  2  dash  3x  plus  2  equals  0) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(9, x  caret  2  dash  3x  plus  2  equals  0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsocratic(18, 220)">
+                  </a> <!-- testsocratic(18, 220) -->
+                  <span class="method-name">testsocratic</span>
+                  <span class="parameters">(18, 220)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.sjsu.socratic.socratic.SampleTest-class-passed -->
+        </div> <!-- panel com.sjsu.socratic.socratic.SampleTest -->
+        <div panel-name="test-xml-com.sjsu.socratic.socratic.SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;com.sjsu.socratic.socratic.SampleTest&quot;&gt;
+  &lt;test name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sjsu.socratic.socratic.SampleTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- com.sjsu.socratic.socratic.SampleTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-com.sjsu.socratic.socratic.SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for com.sjsu.socratic.socratic.SampleTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-com.sjsu.socratic.socratic.SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for com.sjsu.socratic.socratic.SampleTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-com.sjsu.socratic.socratic.SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for com.sjsu.socratic.socratic.SampleTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_com.sjsu.socratic.socratic.SampleTest');
+function tableData_com.sjsu.socratic.socratic.SampleTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testsocratic')
+data.setCell(0, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(0, 3, 29941);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testsocratic')
+data.setCell(1, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(1, 3, 28844);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testsocratic')
+data.setCell(2, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(2, 3, 28684);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testsocratic')
+data.setCell(3, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(3, 3, 28557);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testsocratic')
+data.setCell(4, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(4, 3, 28542);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testsocratic')
+data.setCell(5, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(5, 3, 28518);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testsocratic')
+data.setCell(6, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(6, 3, 28483);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testsocratic')
+data.setCell(7, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(7, 3, 28440);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testsocratic')
+data.setCell(8, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(8, 3, 28346);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testsocratic')
+data.setCell(9, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(9, 3, 28108);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testsocratic')
+data.setCell(10, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(10, 3, 27792);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testsocratic')
+data.setCell(11, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(11, 3, 27431);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testsocratic')
+data.setCell(12, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(12, 3, 27298);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testsocratic')
+data.setCell(13, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(13, 3, 27040);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testsocratic')
+data.setCell(14, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(14, 3, 26927);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testsocratic')
+data.setCell(15, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(15, 3, 26611);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testsocratic')
+data.setCell(16, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(16, 3, 26279);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testsocratic')
+data.setCell(17, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(17, 3, 25022);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testsocratic')
+data.setCell(18, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(18, 3, 21487);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testsocratic')
+data.setCell(19, 2, 'com.sjsu.socratic.socratic.SampleTest')
+data.setCell(19, 3, 13749);
+window.suiteTableData['com.sjsu.socratic.socratic.SampleTest']= { tableData: data, tableDiv: 'times-div-com.sjsu.socratic.socratic.SampleTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-com.sjsu.socratic.socratic.SampleTest">
+              </div> <!-- times-div-com.sjsu.socratic.socratic.SampleTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-com.sjsu.socratic.socratic.SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for com.sjsu.socratic.socratic.SampleTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-com.sjsu.socratic.socratic.SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-com.sjsu.socratic.socratic.SampleTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sjsu.socratic.socratic.SampleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(1, 4)</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(2, 5)</span>
+                <span class="method-start">28365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(3, 102)</span>
+                <span class="method-start">56883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(4, 2x plus 1 equals 5)</span>
+                <span class="method-start">85568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testsocratic(5, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)</span>
+                <span class="method-start">113677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testsocratic(6, 3967672674789433)</span>
+                <span class="method-start">141472 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(7, 10)</span>
+                <span class="method-start">167752 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(8, 220)</span>
+                <span class="method-start">196235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(9, x  caret  2  dash  3x  plus  2  equals  0)</span>
+                <span class="method-start">225080 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(10, 3x  caret  2  dash  5x  plus  6  equals  0)</span>
+                <span class="method-start">253520 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(11, 4)</span>
+                <span class="method-start">280952 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(12, 5)</span>
+                <span class="method-start">307563 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(13, 102)</span>
+                <span class="method-start">334603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(14, 2x plus 1 equals 5)</span>
+                <span class="method-start">361901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testsocratic(15, left parenthesis 2  plus  3 right parenthesis   caret  2 equals 25)</span>
+                <span class="method-start">388828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testsocratic(16, 3967672674789433)</span>
+                <span class="method-start">402578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testsocratic(17, 10)</span>
+                <span class="method-start">424066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(18, 220)</span>
+                <span class="method-start">449089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(19, x  caret  2  dash  3x  plus  2  equals  0)</span>
+                <span class="method-start">477631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testsocratic(20, 3x  caret  2  dash  5x  plus  6  equals  0)</span>
+                <span class="method-start">506188 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">536129 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

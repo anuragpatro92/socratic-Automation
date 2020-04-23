@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.sjsu.socratic.socratic.SampleTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.sjsu.socratic.socratic.SampleTest">
+        <methods>
+          <include name="testsocratic" invocation-numbers="4 5 14 15 16"/>
+          <include name="endTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.sjsu.socratic.socratic.SampleTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.sjsu.socratic.socratic.SampleTest] -->

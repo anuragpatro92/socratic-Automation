@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="10" started-at="2020-04-19T19:25:21Z" finished-at="2020-04-19T19:25:21Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="10" started-at="2020-04-19T19:25:21Z" finished-at="2020-04-19T19:25:21Z">
+      <class name="com.sjsu.socratic.socratic.AppTest">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:testApp(com.sjsu.socratic.socratic.AppTest)]" name="testApp" duration-ms="2" started-at="2020-04-19T12:25:21Z" finished-at="2020-04-19T12:25:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+      </class> <!-- com.sjsu.socratic.socratic.AppTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
